@@ -143,7 +143,7 @@ output$plot2 <- renderPlot({
 
 ```{r}
 library(ggplot2)
-library(plotly)
+
 plotOutput("plot4")
 output$plot4 <- renderPlot({
   csbg_template_3 %>% na.omit() %>% filter(Program==input$Program)%>%
